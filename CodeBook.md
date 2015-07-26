@@ -37,9 +37,12 @@ The following files are available for the train and test data. Their description
 
 ### Transformation details of run_anaylis.R
 #### 1. Merge the training and the test sets to create one data set
-trainingData contains data from X_train.txt
-trainLabel contains data from y_train.txt which serves as label
-trainingSubject contains data from subject_train.txt
+#####trainingData 
+contains data from X_train.txt
+#####trainLabel 
+contains data from y_train.txt which serves as label
+#####trainingSubject
+contains data from subject_train.txt
 
 testData contains data from X_test.txt
 testLabel contains data from y_test.txt
