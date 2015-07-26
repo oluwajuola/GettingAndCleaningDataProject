@@ -33,16 +33,17 @@ The following files are available for the train and test data. Their description
 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
 ### Transformation details of run_anaylis.R
-#### 1. Merge the training and the test sets to create one data set
-**trainingData** contains data from X_train.txt
-**trainLabel** contains data from y_train.txt which serves as label
-**trainingSubject** contains data from subject_train.txt
+#### 1. Merge the training and the test sets to create one data set:
 
-**testData** contains data from X_test.txt
-**testLabel** contains data from y_test.txt
-**testSubject** contains data from subject_test.txt
+**trainingData** contains data from X_train.txt.
+**trainLabel** contains data from y_train.txt which serves as label.
+**trainingSubject** contains data from subject_train.txt.
 
-**combinedData** contains data derived by merging trainingData and testData rbind
-**combineLabel** contains data derived by merging trainLabel and testLabel data using rbind 
-**joinSubject** contains data derived by merging trainingSubject and testSubject data rbind
+**testData** contains data from X_test.txt.
+**testLabel** contains data from y_test.txt.
+**testSubject** contains data from subject_test.txt.
+
+**combinedData** contains data derived by merging trainingData and testData rbind.
+**combineLabel** contains data derived by merging trainLabel and testLabel data using rbind.
+**joinSubject** contains data derived by merging trainingSubject and testSubject data rbind.
 
