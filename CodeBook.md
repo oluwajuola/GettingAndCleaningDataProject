@@ -25,30 +25,24 @@ The dataset includes the following files:
 
     'test/y_test.txt': Test labels.
 
-The following files are available for the train and test data. Their descriptions are equivalent.
+The following files are available for the train and test data. Their descriptions are equivalent:
 
-    'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-
-    'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
-
-    'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
-
-    'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
+'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
+'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
+'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
 ### Transformation details of run_anaylis.R
 #### 1. Merge the training and the test sets to create one data set
-#####trainingData 
-contains data from X_train.txt
-#####trainLabel 
-contains data from y_train.txt which serves as label
-#####trainingSubject
-contains data from subject_train.txt
+**trainingData** contains data from X_train.txt
+**trainLabel** contains data from y_train.txt which serves as label
+**trainingSubject** contains data from subject_train.txt
 
-testData contains data from X_test.txt
-testLabel contains data from y_test.txt
-testSubject contains data from subject_test.txt
+**testData** contains data from X_test.txt
+**testLabel** contains data from y_test.txt
+**testSubject** contains data from subject_test.txt
 
-combinedData contains data derived by merging trainingData and testData rbind
-combineLabel contains data derived by merging trainLabel and testLabel data using rbind 
-joinSubject contains data derived by merging trainingSubject and testSubject data rbind
+**combinedData** contains data derived by merging trainingData and testData rbind
+**combineLabel** contains data derived by merging trainLabel and testLabel data using rbind 
+**joinSubject** contains data derived by merging trainingSubject and testSubject data rbind
 
