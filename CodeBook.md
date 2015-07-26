@@ -36,11 +36,13 @@ The following files are available for the train and test data. Their description
 - **'train/Inertial Signals/body_gyro_x_train.txt'**: The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
 ### Transformation details of run_anaylis.R
+
+
 #### 1. Merge the training and the test sets to create one data set:
 
 - **trainingData** contains data from X_train.txt. 
-**trainLabel** contains data from y_train.txt which serves as label. 
-**trainingSubject** contains data from subject_train.txt. 
+- **trainLabel** contains data from y_train.txt which serves as label. 
+- **trainingSubject** contains data from subject_train.txt. 
 
 - **testData** contains data from X_test.txt. 
 - **testLabel** contains data from y_test.txt. 
@@ -50,3 +52,21 @@ The following files are available for the train and test data. Their description
 - **combineLabel** contains data derived by merging trainLabel and testLabel data using rbind. 
 - **joinSubject** contains data derived by merging trainingSubject and testSubject data rbind. 
 
+#### 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+
+- **features** contains data loaded from features.txt
+- **meanStdIndices** numeric vector for indexing to extract desired data.
+
+#### 3. Uses descriptive activity names to name the activities in the data set
+
+-**activityLabel** contains data loaded from activity_labels.txt 
+
+#### 4. Appropriately labels the data set with descriptive activity names.
+
+-**cleanData** contains data by merging joinSubject, combineLabel and combineData by using cbind
+-**Cleaned_Combined_data.txt** is cleanData written to text file.
+
+#### 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+-**resultantData** tidy data derived by finding column means of all column **except** "Subject" and "Activity" using ddply from **plyr** library.
+-**tidyDataSet.txt** is the tidy data written to file that contains he average of each variable for each activity and each subject.
