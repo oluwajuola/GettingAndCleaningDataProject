@@ -25,7 +25,6 @@ features <- read.table("./features.txt")
 meanStdIndices <- grep("mean\\(\\)|std\\(\\)", features[, 2])
 length(meanStdIndices)
 combinedData <- combinedData[, meanStdIndices]
-dim(combinedData)
 names(combinedData) <- gsub("\\(\\)", "", features[meanStdIndices, 2]) # remove brackets "()"
 names(combinedData) <- gsub("mean", "Mean", names(combinedData)) # capitalizes M
 names(combinedData) <- gsub("std", "Std", names(combinedData)) # capitalizes S
@@ -46,11 +45,11 @@ names(combineLabel) <- "activity"
 
 # Requirement #4: Appropriately labels the data set with descriptive variable names.
 names(joinSubject) <- "subject"
-cleanData <- cbind(joinSubject, combineLabel, combinedData); dim(cleanData) 
+cleanData <- cbind(joinSubject, combineLabel, combinedData)
 write.table(cleanData, "Cleaned_Combined_data.txt") # write cleaned data to file.
 
 
 
 # Requirement #5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 resultantData <- ddply(cleanData, .(subject, activity), function(x) colMeans(x[, 3:66])) # Find column means but exclude subject (column 1) and activity column (column 2)
-write.table(resultantData, "dataSet_with_average_of_variables.txt", row.name=FALSE)
+write.table(resultantData, "tidyDataSet.txt", row.name=FALSE)
