@@ -23,5 +23,6 @@ Two files would be generated:
     1. Cleaned_Combined_data.txt  --- This file is the answer to question #4 above
     2. dataSet_with_average_of_variables.txt --- This file is the answer to question #5 above
     
-Requirement: plyr
+### Requirement 
+plyr
 
