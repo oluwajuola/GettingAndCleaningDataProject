@@ -10,10 +10,10 @@ You should create one R script called run_analysis.R that does the following:
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
  
 Steps to work on this course project:
-1. Open R/R Studio
-2. Set the working directory to any desired location
-3. Download https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to into the working direcotry
-4. Extract the downloaded zip file into the working directory
+1. Open R/R Studio.
+2. Set the working directory to any desired location.
+3. Download https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to into the working direcotry.
+4. Extract the downloaded zip file into the working directory.
 5. Run the run_analysis.R script.
 
 Result:
