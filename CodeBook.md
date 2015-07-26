@@ -59,14 +59,14 @@ The following files are available for the train and test data. Their description
 
 #### 3. Uses descriptive activity names to name the activities in the data set
 
--**activityLabel** contains data loaded from activity_labels.txt 
+- **activityLabel** contains data loaded from activity_labels.txt 
 
 #### 4. Appropriately labels the data set with descriptive activity names.
 
--**cleanData** contains data by merging joinSubject, combineLabel and combineData by using cbind
--**Cleaned_Combined_data.txt** is cleanData written to text file.
+- **cleanData** contains data by merging joinSubject, combineLabel and combineData by using cbind
+- **Cleaned_Combined_data.txt** is cleanData written to text file.
 
 #### 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
--**resultantData** tidy data derived by finding column means of all column **except** "Subject" and "Activity" using ddply from **plyr** library.
--**tidyDataSet.txt** is the tidy data written to file that contains he average of each variable for each activity and each subject.
+- **resultantData** tidy data derived by finding column means of all column **except** "Subject" and "Activity" using ddply from **plyr** library.
+- **tidyDataSet.txt** is the tidy data written to file that contains he average of each variable for each activity and each subject.
