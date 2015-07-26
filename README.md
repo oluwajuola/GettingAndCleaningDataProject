@@ -17,8 +17,7 @@ Steps to work on this course project:
 4. Extract the downloaded zip file into the working directory
 5. Run the run_analysis.R script
 
-Result
-
+# Result
 Two files would be generated:
 
     1. Cleaned_Combined_data.txt  --- This file is the answer to question #4 above
